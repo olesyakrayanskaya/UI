@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./form.css" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <div class="app-popup-review-with-images app-popup-review-with-images_open">
+      <div class="app-popup-review-with-images__container">
+        <div class="app-popup-review-with-images__close">
+          <div class="app-popup-review-with-images__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+            >
+              <path
+                d="M18.3346 18.3332L3.66797 3.6665M18.3346 3.6665L3.66797 18.3332"
+                stroke="#DBDBDB"
+                stroke-width="1.83333"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="app-popup-review-with-images__content">
+          <div class="app-popup-review-with-images__header">
+            <div class="app-popup-review-with-images__title">
+              Оставить отзыв
+            </div>
+            <div class="app-popup-review-with-images__text">
+              Ваш отзыв очень важен<br />для нас
+            </div>
+          </div>
+          <div class="app-popup-review-with-images__form">
+            <form
+              class="app-popup-review-with-images__form__wrapper"
+              enctype="multipart/form-data"
+            >
+              <label
+                class="app-popup-review-with-images__label"
+                for="name-popup-review-with-images"
+              >
+                <input
+                  class="app-popup-review-with-images__input app-popup-review-with-images__input-text"
+                  type="text"
+                  id="name-popup-review-with-images"
+                  name="name"
+                  placeholder="Ваше имя"
+                  name="name"
+                />
+                <p class="app-popup-review-with-images__label-absolute">
+                  Ваше имя
+                </p>
+              </label>
+              <label
+                class="app-popup-review-with-images__label"
+                for="tel-popup-review-with-images"
+              >
+                <input
+                  class="app-popup-review-with-images__input"
+                  type="tel"
+                  id="tel-popup-review-with-images"
+                  name="phone"
+                  placeholder="Номер телефона"
+                  data-phone-pattern="_ (___) ___-__-__"
+                  title="Введите номер телефона в формате * (***) *** ** **"
+                  required
+                />
+                <p class="app-popup-review-with-images__label-absolute">
+                  Телефон
+                </p>
+              </label>
+              <label
+                class="app-popup-review-with-images__label"
+                for="question-popup-review-with-images"
+              >
+                <input
+                  class="app-popup-review-with-images__input app-popup-review-with-images__input-textarea"
+                  type="textarea"
+                  id="question-popup-review-with-images"
+                  name="question"
+                  placeholder="Ваш отзыв"
+                  name="question"
+                />
+                <p class="app-popup-review-with-images__label-absolute">
+                  Ваш отзыв
+                </p>
+              </label>
+              <div class="app-popup-review-with-images__media-box">
+                <p class="app-popup-review-with-images__media-box-title">
+                  Добавить медиафайл
+                </p>
+                <div class="app-popup-review-with-images__media-dragzone">
+                  <p class="app-popup-review-with-images__media-dragzone-text">
+                    Перетащите фотографии сюда<br />или
+                  </p>
+                  <label
+                    class="app-popup-review-with-images__media-box-label"
+                    for="images-popup-review-with-images"
+                    >Выбрать файл
+                    <input
+                      class="app-popup-review-with-images__media-box-input"
+                      type="file"
+                      name="images"
+                      id="images-popup-review-with-images"
+                      accept="image/png, image/jpg"
+                      multiple
+                    />
+                  </label>
+                </div>
+                <p class="app-popup-review-with-images__media-box-description">
+                  Формат файлов JPG, PNG. Максимальный размер 2МБ
+                </p>
+                <div
+                  class="app-popup-review-with-images__media-container"
+                ></div>
+              </div>
+              <button
+                type="submit"
+                class="app-popup-review-with-images__button"
+              >
+                Оставить отзыв
+              </button>
+              <div class="app-popup-review-with-images__checkbox">
+                <input
+                  class="app-popup-review-with-images__checkbox-input checkbox-input"
+                  type="checkbox"
+                  id="check-popup-review-with-images"
+                  required
+                />
+                <label
+                  class="app-popup-review-with-images__checkbox-label checkbox-label"
+                  for="check-popup-review-with-images"
+                  >Я даю свое согласие с
+                  <a href="{{ $contactData['politic'] }}"
+                    >политикой конфиденциальности в отношении обработки
+                    персональных данных</a
+                  >
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
