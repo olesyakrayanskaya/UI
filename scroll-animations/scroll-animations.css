@@ -1,0 +1,45 @@
+.scrull-up {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+}
+
+.container {
+    max-width: 1480px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 100%;
+    height: 2500px;
+    border: 1px solid #4e474a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-block {
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #4e474a;
+}
+
+@keyframes square {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animation-square {
+        animation: square 3s ease-in-out 1 both;
+    }
+}
