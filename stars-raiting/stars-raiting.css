@@ -1,0 +1,48 @@
+.popup_stars-raiting__num {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.popup_stars-raiting__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.popup_stars-raiting__star-label {
+    cursor: pointer;
+}
+
+.popup_stars-raiting__star-label:hover svg path,
+.popup_stars-raiting__star-label:hover~label svg path {
+    transition: all 0.4s;
+    fill: #eeec67;
+}
+
+.popup_stars-raiting__star-label:has(input:checked) svg path,
+.popup_stars-raiting__star-label:has(input:checked)~label svg path {
+    fill: #ee9611;
+}
+
+.popup_stars-raiting__radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
