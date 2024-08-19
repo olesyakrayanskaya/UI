@@ -1,0 +1,97 @@
+.header {
+    height: 80px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1480px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header__btn {
+    height: 46px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #6742d5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header__btn:hover {
+    background-color: #2d176c;
+}
+
+.catalog-btn__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.6s;
+}
+
+.catalog-btn__icon-line {
+    width: 100%;
+    display: flex;
+    gap: 3px;
+}
+
+.catalog-btn__icon-line_sm {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.catalog-btn__icon-line_lg {
+    width: 24px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.catalog-btn__icon-line:nth-child(2) .catalog-btn__icon-line_lg {
+    width: 18px;
+}
+
+.catalog-btn__icon_active {
+    transform: translateX(10px);
+    transition: all 0.6s;
+}
+
+.catalog-btn__icon_active .catalog-btn__icon-line_sm {
+    transform: scale(0);
+    transition: all 0.6s;
+}
+
+.catalog-btn__icon_active .catalog-btn__icon-line:nth-child(2) .catalog-btn__icon-line_lg {
+    transform: scale(0);
+    transition: all 0.6s;
+}
+
+.catalog-btn__icon_active .catalog-btn__icon-line:nth-child(1) .catalog-btn__icon-line_lg {
+    transform: rotate(45deg) translateY(11px);
+    transition: all 0.6s;
+}
+
+.catalog-btn__icon_active .catalog-btn__icon-line:nth-child(3) .catalog-btn__icon-line_lg {
+    transform: rotate(-45deg) translateY(-11px);
+    transition: all 0.6s;
+}
