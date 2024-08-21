@@ -28,6 +28,16 @@
     border: 1px solid #4e474a;
 }
 
+@-webkit-keyframes square {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
 @keyframes square {
     0% {
         transform: scale(0);
@@ -40,6 +50,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .animation-square {
+        -webkit-animation: square 3s ease-in-out 1 both;
         animation: square 3s ease-in-out 1 both;
     }
 }
