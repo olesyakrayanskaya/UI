@@ -1,0 +1,45 @@
+.swiper {
+    max-width: 847px;
+    width: 60%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.hero {
+    display: flex;
+    gap: 20px;
+}
+
+.hero__right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 38%;
+    height: 500px;
+}
+
+.hero__right-section img {
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+}
